@@ -1,0 +1,116 @@
+.img1 {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+}
+
+.img2 {
+    position: absolute;
+    top: 23%;
+    left: 0;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.img3 {
+    position: absolute;
+    top: 45%;
+    left: 30px;
+    max-width: 250px;
+    max-height: 300px;
+}
+
+.img4 {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 37%;
+    left: 75%;
+    width: 400px;
+    height: 100px;
+}
+
+.circle {
+    border-radius: 50%;
+    border: 2px solid;
+    border-width: 2px;
+    border-color: black;
+    background: #fff;
+    height: 50px;
+    width: 50px;
+}
+
+.start {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    background-color: #565555;
+    width: fit-content;
+}
+.bar {
+    height: 20px;
+    background-color: gray; /* Màu mặc định cho thanh bar */
+}
+.green-bar {
+    background-color: green;
+}
+.red {
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+    border: 0.1875em solid #0F1C3F;
+    margin: 5px 5px;
+}
+
+.yellow {
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+    border: 0.1875em solid #0F1C3F;
+    margin: 5px 5px;
+}
+
+.green {
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+    border: 0.1875em solid #0F1C3F;
+    margin: 5px 5px;
+}
+
+.bar {
+    background-color: green;
+    width: 420px;
+    border-style: solid;
+}
+
+.car_runing {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(0, -1px, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(0, 1px, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(0, -1px, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(0, 1px, 0);
+    }
+}
